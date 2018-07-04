@@ -1,0 +1,4 @@
+<!--pages/wxss/wxss.wxml-->
+<view style="color:{{color}};" > color</view>
+<view class="small-p">small-p</view>
+<view class="container">middle-p</view>

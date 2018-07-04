@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/photo/photo",
+    "pages/databind/databind",
+    "pages/list/list",
+    "pages/condtion/condtion",
+    "pages/template/template",
+    "pages/event/event",
+    "pages/quote/quote",
+    "pages/wxs/wxs",
+    "pages/wxss/wxss",
+    "pages/module/module",
+    "pages/view/view",
+    "pages/scroll_view/scroll_view"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "神涂",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/photo/photo",
+        "text": "拍照"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      }
+    ]
+  },
+  "debug": true
+}

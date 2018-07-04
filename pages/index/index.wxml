@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="btn-area">
+  <navigator url="/pages/databind/databind"  hover-class="other-navigator-hover">数据绑定</navigator>
+  <navigator url="/pages/list/list" hover-class="navigator-hover">列表页</navigator>
+  <navigator url="/pages/condtion/condtion" hover-class="navigator-hover">条件页面</navigator>
+  <navigator url="/pages/template/template" hover-class="navigator-hover">模板页面</navigator>
+  <navigator url="/pages/event/event" hover-class="navigator-hover">事件页面</navigator>
+  <navigator url="/pages/quote/quote" hover-class="navigator-hover">引用页面</navigator>
+  <navigator url="/pages/wxs/wxs" hover-class="navigator-hover">wxs脚本语言</navigator>
+  <navigator url="/pages/wxss/wxss" hover-class="navigator-hover">wxss样式</navigator>
+  <navigator url="/pages/module/module" hover-class="navigator-hover">组件</navigator>
+  
+
+  
+</view>
+</view>

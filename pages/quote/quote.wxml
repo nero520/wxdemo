@@ -1,0 +1,11 @@
+<!--pages/quote/quote.wxml-->
+<rich-text>====import===</rich-text>
+<import src="item.wxml"/>
+<template is="item" data="{{text: 'forbar'}}"/>
+<rich-text>======include========</rich-text>
+<include src="c.wxml"/>
+<rich-text>============</rich-text>
+<!-- index.wxml -->
+<include src="header.wxml"/>
+<view> body </view>
+<include src="footer.wxml"/>

@@ -1,0 +1,64 @@
+<!--wxml-->
+<wxs module="m1">
+var msg = "hello world";
+module.exports.message = msg;
+</wxs>
+
+<!--wxml-->
+<!-- 下面的 getMax 函数，接受一个数组，且返回数组中最大的元素的值 -->
+<wxs module="m2">
+var getMax = function(array) {
+  var max = undefined;
+  for (var i = 0; i < array.length; ++i) {
+    max = max === undefined ? 
+      array[i] : 
+      (max >= array[i] ? max : array[i]);
+  }
+  return max;
+}
+
+module.exports.getMax = getMax;
+</wxs>
+
+<!-- 调用 wxs 里面的 getMax 函数，参数为 page.js 里面的 array -->
+<view> {{m2.getMax(array)}} </view>
+
+<view> {{m1.message}} </view>
+
+<view>=============</view>
+<wxs src="comm.wxs" module="tools" />
+<view> {{tools.msg}} </view>
+<view> {{tools.bar(tools.FOO)}} </view>
+<view>=================</view>
+<wxs src="logic.wxs" module="logic" />
+<view>===============</view>
+<!--wxml-->
+<wxs module="foo">
+var some_msg = "hello world";
+module.exports = {
+    msg : some_msg,
+}
+</wxs>
+<view> {{foo.msg}} </view>
+
+<view>====wxs注释说明======</view>
+<!-- wxml -->
+<wxs module="sample">
+// 方法一：单行注释
+
+/*
+方法二：多行注释
+*/
+
+/*
+方法三：结尾注释。即从 /* 开始往后的所有 WXS 代码均被注释
+
+var a = 1;
+var b = 2;
+var c = "fake";
+
+</wxs>
+<view>===========逻辑运算========</view>
+<wxs src="arithmetic.wxs" module="ari" />
+<view>{{ari.gg()}}</view>
+

@@ -1,0 +1,28 @@
+/* pages/view/view.wxss */
+
+.flex-item{
+  width: 50px;
+}
+
+.bc_green{
+  background-color: green;
+}
+
+.bc_red{
+  background-color: red;
+}
+
+.bc_blue{
+  background-color: blue;
+}
+
+.flex-wrp-r{
+  flex-direction: row;
+  display:flex;
+}
+
+.flex-wrp-c{
+  height: 300px;
+  flex-direction:column;
+  display:flex;
+}

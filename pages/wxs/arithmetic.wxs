@@ -1,0 +1,138 @@
+var basic = function() {
+  // console.log("+++++++");
+  // var a = 10, b = 20;
+  // // 加法运算
+  // console.log(30 === a + b);
+  // // 减法运算
+  // console.log(-10 === a - b);
+  // // 乘法运算
+  // console.log(200 === a * b);
+  // // 除法运算
+  // console.log(0.5 === a / b);
+  // // 取余运算
+  // console.log(10 === a % b);
+  // console.log("----------------");
+}
+
+var str = function(){
+ 
+  var c = '.w', d = 'xs';
+
+  // 字符串拼接
+  console.log(c + d);
+}
+
+var yy = function(){
+  var a = 10, b = 20;
+
+  // 自增运算
+  console.log(10 === a++);
+  console.log(12 === ++a);
+  // 自减运算
+  console.log(12 === a--);
+  console.log(10 === --a);
+  // 正值运算
+  console.log(10 === +a);
+  // 负值运算
+  console.log(0 - 10 === -a);
+  // 否运算
+  console.log(-11 === ~a);
+  // 取反运算
+  console.log(false === !a);
+  // delete 运算
+  console.log(true === delete a.fake);
+  // void 运算
+  console.log(undefined === void a);
+  // typeof 运算
+  console.log("number" === typeof a);
+}
+
+var cc = function(){
+  var a = 10, b = 20;
+
+  // 左移运算
+  console.log(80 === (a << 3));
+  // 无符号右移运算
+  console.log(2 === (a >> 2));
+  // 带符号右移运算
+  console.log(2 === (a >>> 2));
+  // 与运算
+  console.log(2 === (a & 3));
+  // 异或运算
+  console.log(9 === (a ^ 3));
+  // 或运算
+  console.log(11 === (a | 3));
+}
+
+var dd = function(){
+  var a = 10, b = 20;
+
+  // 小于
+  console.log(true === (a < b));
+  // 大于
+  console.log(false === (a > b));
+  // 小于等于
+  console.log(true === (a <= b));
+  // 大于等于
+  console.log(false === (a >= b));
+}
+
+var ee = function(){
+  var a = 10, b = 20;
+
+  // 等号
+  console.log(false === (a == b));
+  // 非等号
+  console.log(true === (a != b));
+  // 全等号
+  console.log(false === (a === b));
+  // 非全等号
+  console.log(true === (a !== b));
+}
+
+var ff = function(){
+  var a = 10;
+
+  a = 10; a *= 10;
+  console.log(100 === a);
+  a = 10; a /= 5;
+  console.log(2 === a);
+  a = 10; a %= 7;
+  console.log(3 === a);
+  a = 10; a += 5;
+  console.log(15 === a);
+  a = 10; a -= 11;
+  console.log(-1 === a);
+  a = 10; a <<= 10;
+  console.log(10240 === a);
+  a = 10; a >>= 2;
+  console.log(2 === a);
+  a = 10; a >>>= 2;
+  console.log(2 === a);
+  a = 10; a &= 3;
+  console.log(2 === a);
+  a = 10; a ^= 3;
+  console.log(9 === a);
+  a = 10; a |= 3;
+  console.log(11 === a);
+}
+
+var gg = function(){
+  var a = 10, b = 20;
+
+  // 逻辑与
+  console.log(20 === (a && b));
+  // 逻辑或
+  console.log(10 === (a || b));
+  //条件运算符
+  console.log(20 === (a >= 10 ? a + 10 : b + 10));
+  console.log("---------");
+  //逗号运算符
+  console.log(20 === (a, b));
+  console.log("------22---" + (a, b));
+}
+
+// module.exports.basic = basic;
+// module.exports.str = str;
+// module.exports.yy = yy;
+module.exports.gg = gg;

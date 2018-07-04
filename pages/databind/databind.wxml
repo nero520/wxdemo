@@ -1,0 +1,13 @@
+<view> {{ message }} </view>
+<view id="item-{{id}}">item-{{id}} </view>
+<view wx:if="{{condition}}">condition:{{condition}} </view>
+<checkbox checked="{{false}}">按钮</checkbox>
+<view hidden="{{flag ? true : false}}"> Hidden </view>
+<view> {{a + b}} + {{c}} + d </view>
+<view wx:if="{{length > 5}}">length={{length}} </view>
+<view>{{"hello" + message}}</view>
+<view>{{object.key}} {{array[0]}}</view>
+<view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view>
+<view wx:for="{{[1,2,3]}} ">
+  {{item}}
+</view>
