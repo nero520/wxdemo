@@ -13,7 +13,8 @@
     "pages/wxss/wxss",
     "pages/module/module",
     "pages/view/view",
-    "pages/scroll_view/scroll_view"
+    "pages/scroll_view/scroll_view",
+    "pages/swiper/swiper"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,3 +1,4 @@
   <navigator url="/pages/view/view" hover-class="navigator-hover">组件view</navigator>
   <navigator url="/pages/scroll_view/scroll_view" hover-class="navigator-hover">组件scroll_view</navigator>
+  <navigator url="/pages/swiper/swiper" hover-class="navigator-hover">组件滑块视图swiper</navigator>
   
